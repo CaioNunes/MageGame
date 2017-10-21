@@ -378,9 +378,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -828,6 +828,8 @@ MonoBehaviour:
   elementSlotsP2:
   - {fileID: 1059698644}
   - {fileID: 1602969537}
+  lifeP1: {fileID: 228019356}
+  lifeP2: {fileID: 1519827330}
 --- !u!1 &990609743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,9 +1457,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

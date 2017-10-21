@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class MagicManager : MonoBehaviour {
 
-    public GameObject fireball ;
-    public GameObject fireshotgun;
+    public GameObject fireball ;    
     public GameObject demonfire;
     public GameObject rockpunch;
-    public GameObject rockwall;
-    public GameObject mudshot;
+    public GameObject rockwall;    
     public GameObject waterblade;
     public GameObject mirrorforce;
-    public GameObject invisibility;
-    public GameObject dispell;
+
     public Hashtable magics;
 
 	// Use this for initialization
@@ -25,10 +22,7 @@ public class MagicManager : MonoBehaviour {
         magics.Add("AF", demonfire);
         magics.Add("FT", rockwall);
         magics.Add("AT", mirrorforce);
-        //magics.Add("ATT", mudshot);
-        //magics.Add("FFT", fireshotgun); 
-        //magics.Add("AAF", invisibility);
-        //magics.Add("AFT", dispell);        
+              
     }
 	
 	// Update is called once per frame

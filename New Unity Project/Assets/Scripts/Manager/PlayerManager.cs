@@ -22,11 +22,11 @@ public class PlayerManager : MonoBehaviour {
         if (qntPlayer < 2 && qntPlayer > 0){
             MovePlayer winnerPlayer = FindObjectOfType<MovePlayer>();
             DontDestroyOnLoad(winnerPlayer.gameObject);
-            gameObject.GetComponent<LevelManager>().LoadScene(winnerPlayer.gameObject.name);
+            gameObject.GetComponent<LevelManager>().LoadScene("Winner" + winnerPlayer.gameObject.name);
         }
         else
             if (qntPlayer == 0){
-            gameObject.GetComponent<LevelManager>().LoadScene("Empate");
+            gameObject.GetComponent<LevelManager>().LoadScene("Draw");
         }
     }
 

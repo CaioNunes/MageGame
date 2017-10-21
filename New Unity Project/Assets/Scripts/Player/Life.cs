@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Life : MonoBehaviour {
 
-    private float hp = 100;
+    public float hp = 100;
 
 	// Use this for initialization
 	void Start () {
@@ -13,15 +13,20 @@ public class Life : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Death();
 	}  
 
-    void takeDamage(float damage) {
-        hp -= damage;
-        Debug.Log(hp);
+    void TakeDamage(float damage) {
+        hp -= damage;        
     }
 
-    void death() {
+    void Death() {
+
+        if(hp <= 0)
+        {
+            FindObjectOfType<PlayerManager>().qntPlayer--;
+            DestroyImmediate(gameObject);
+        }
         //Manda mensagem pro objeto que gerencia a vitória
     }
 }

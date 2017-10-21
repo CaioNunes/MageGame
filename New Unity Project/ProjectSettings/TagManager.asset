@@ -8,6 +8,7 @@ TagManager:
   - Player2
   - Magic
   - Mirror
+  - PlayerWinner
   layers:
   - Default
   - TransparentFX

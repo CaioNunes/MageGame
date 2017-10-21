@@ -10,4 +10,13 @@ EditorBuildSettings:
     guid: 30b1ba0c9a5c5354e90df4fcd517c928
   - enabled: 1
     path: Assets/Scenes/Game.unity
-    guid: 00000000000000000000000000000000
+    guid: a7ed6dcf9ea80094e9eed4d90654d9f1
+  - enabled: 1
+    path: Assets/Scenes/WinnerPlayer1.unity
+    guid: 73e459839fedcf64aae01114df7cac8f
+  - enabled: 1
+    path: Assets/Scenes/WinnerPlayer2.unity
+    guid: 71467f744ad1de641889adf313f996e4
+  - enabled: 1
+    path: Assets/Scenes/Draw.unity
+    guid: a45ef3df17830af4e8b98eaedbf9fd24

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+    bool sceneWinner = false;
+
 	// Use this for initialization
 	void Start () {
         DontDestroyOnLoad(this);
@@ -15,14 +17,14 @@ public class LevelManager : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             OnMainMenu();
-        }
+        }        
+        
     }
-
 
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
-    }
+    }  
 
     void OnMainMenu()
     {
