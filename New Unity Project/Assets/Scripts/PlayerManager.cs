@@ -41,9 +41,9 @@ public class PlayerManager : MonoBehaviour {
     void Winner()
     {
         if (qntPlayer < 2 && qntPlayer > 0){
-            GameObject winnerPlayer = FindObjectOfType<MovePlayer>();
-            DontDestroyOnLoad(winnerPlayer);
-            LoadScene(winnerPlayer.name);
+            MovePlayer winnerPlayer = FindObjectOfType<MovePlayer>();
+            DontDestroyOnLoad(winnerPlayer.gameObject);
+            LoadScene(winnerPlayer.gameObject.name);
         }
         else
             if (qntPlayer == 0){
