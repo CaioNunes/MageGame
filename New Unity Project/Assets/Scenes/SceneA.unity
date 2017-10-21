@@ -277,7 +277,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 604084129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f338892ca021c4c95141c0d400d0be, type: 3}
+  m_Script: {fileID: 11500000, guid: 51eb0970882f44f44a37712f639c29dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveUp: sobe
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 604084129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07ea489d2db5d704aa6a697c51bf7929, type: 3}
+  m_Script: {fileID: 11500000, guid: e85a454e451bcea4bb807df7038d21ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
