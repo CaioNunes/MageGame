@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Controles : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public string moveUp;
+    public string moveDown;
+ //   public string cast;
+   // public string changeElements;
+    //public string changePanel;
+ //   public string clear;
 }
