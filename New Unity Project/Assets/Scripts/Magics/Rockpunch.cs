@@ -7,6 +7,9 @@ public class Rockpunch : MonoBehaviour {
     public float velocity = 2;
     public float direction;
 
+    float damage = 12f;
+
+
     // Use this for initialization
     void Start()
     {
@@ -20,13 +23,38 @@ public class Rockpunch : MonoBehaviour {
             direction = 1;
         }
 
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(direction * velocity * Time.deltaTime, 0, 0);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Mirror")
+        {
+            direction *= -1;
+        }
+
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
+        {
+            collision.gameObject.SendMessage("takeDamage", damage);
+            Destroy(this.gameObject);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
+        {
+            collision.gameObject.SendMessage("takeDamage", damage);
+            Destroy(this.gameObject);
+        }
+
+
     }
 }

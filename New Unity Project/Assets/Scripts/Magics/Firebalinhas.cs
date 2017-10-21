@@ -5,7 +5,7 @@ using UnityEngine;
 public class Firebalinhas : MonoBehaviour {
     public float velocity;
     public float direction;
-    float damage = 20f;
+    float damage = 15f;
 
     // Use this for initialization
     void Start () {
