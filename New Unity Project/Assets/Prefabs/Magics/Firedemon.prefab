@@ -72,7 +72,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 2
   direction: 0
-  duration: 0.5
+  duration: 2
+  fireRate: 0.2
+  firebalinhas: {fileID: 1904481070807336, guid: ac797f42a0ffe154ebd6481794974055,
+    type: 2}
   positionInstante: 3
 --- !u!212 &212037242081925856
 SpriteRenderer:

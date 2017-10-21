@@ -18,6 +18,9 @@ public class Cast : MonoBehaviour {
 
     bool canCast = true;
 
+    public float cooldown;
+    float cont;
+
     string lastMagic;
 
 	// Use this for initialization
@@ -29,6 +32,10 @@ public class Cast : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         playerPosition = gameObject.transform;
+
+        if (cont <= cooldown) {
+            cont += Time.deltaTime;
+        }
 
         if (Input.GetButtonDown(gameObject.GetComponent<Controls>().clearMagic))
         {
@@ -52,11 +59,16 @@ public class Cast : MonoBehaviour {
 
     void MagicCast() {            
             for (int i = 0; i < 2; i++) {
-                if (magicPanel[i] == "E") {
+                if (magicPanel[i] == "E" ) {
                     canCast = false;
                     Debug.Log("Sem Magia");
                 }
             }
+
+            if (cont < cooldown) {
+                canCast = false;    
+            }
+
             if (canCast) {                
                 Array.Sort(magicPanel);                
                 magic = magicPanel[0] + magicPanel[1];
@@ -72,6 +84,7 @@ public class Cast : MonoBehaviour {
                         Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x + 2.67f, playerPosition.position.y), Quaternion.identity);
 
                 lastMagic = magic;
+                cont = 0;
                 Debug.Log(magic);
                 }
                 ClearMagic();

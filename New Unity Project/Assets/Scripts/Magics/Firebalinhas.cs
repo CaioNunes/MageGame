@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rockpunch : MonoBehaviour {
-
-    public float velocity = 2;
+public class Firebalinhas : MonoBehaviour {
+    public float velocity;
     public float direction;
-
-    float damage = 12f;
-
+    float damage = 15f;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start () {
         if (gameObject.transform.position.x > 0)
         {
             direction = -1;
@@ -26,9 +22,19 @@ public class Rockpunch : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update () {
         transform.Translate(direction * velocity * Time.deltaTime, 0, 0);
+
+        if (Mathf.Abs(transform.position.x) > 10f)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    void mirror()
+    {
+        direction *= -1;
+        this.gameObject.GetComponent<SpriteRenderer>().flipX = !this.gameObject.GetComponent<SpriteRenderer>().flipX;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
