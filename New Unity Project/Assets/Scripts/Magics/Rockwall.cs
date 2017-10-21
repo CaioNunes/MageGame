@@ -11,9 +11,17 @@ public class Rockwall : MonoBehaviour {
     void Start()
     {
         if (gameObject.transform.position.x > 0)
+        {
             direction = -1;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
         else
+        {
             direction = 1;
+        }
+
+
+
     }
 
     // Update is called once per frame

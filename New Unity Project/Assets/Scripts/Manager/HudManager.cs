@@ -50,7 +50,7 @@ public class HudManager : MonoBehaviour {
 
         //Player 2
         numberP2A = player2.GetComponent<Cast>().position_elements_A;
-        if (numberP1A != -1)
+        if (numberP2A != -1)
         {
             elementSlotsP2[0].GetComponentInChildren<SpriteRenderer>().enabled = true;
             elementSlotsP2[0].GetComponentInChildren<SpriteRenderer>().sprite = elements[numberP2A];
@@ -69,7 +69,7 @@ public class HudManager : MonoBehaviour {
         }
         else
         {
-            elementSlotsP1[1].GetComponentInChildren<SpriteRenderer>().enabled = false;
+            elementSlotsP2[1].GetComponentInChildren<SpriteRenderer>().enabled = false;
         }
     }
 

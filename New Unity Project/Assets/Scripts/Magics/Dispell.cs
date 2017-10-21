@@ -12,7 +12,7 @@ public class Dispell : MonoBehaviour {
         if (gameObject.transform.position.x > 0)
         {
             direction = -1;
-            gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
