@@ -145,6 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position_elements_A: 0
   position_elements_B: 0
+  cooldown: 1.5
+  cont: 3
 --- !u!212 &212005287482897798
 SpriteRenderer:
   m_ObjectHideFlags: 1
