@@ -65,9 +65,12 @@ public class Cast : MonoBehaviour {
                     //audio de falha
                     lastMagic = "";
                 }
-                else {                
-                Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x, playerPosition.position.y), Quaternion.identity);
-                
+                else {           
+                    if(playerPosition.position.x > 0)
+                        Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x - 2.67f, playerPosition.position.y), Quaternion.identity);
+                    else
+                        Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x + 2.67f, playerPosition.position.y), Quaternion.identity);
+
                 lastMagic = magic;
                 Debug.Log(magic);
                 }
