@@ -7,7 +7,7 @@ public class Waterblade : MonoBehaviour {
 
     public float velocity;
     public float direction;
-    float damage = 0.1f;
+    float damage = 0.15f;
 
     // Use this for initialization
     void Start()

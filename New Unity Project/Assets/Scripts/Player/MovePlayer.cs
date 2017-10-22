@@ -34,6 +34,7 @@ public class MovePlayer : MonoBehaviour {
         }
 
         if (move < 0 && canMoveDown){
+            anim.Play("moveDown");
             transform.Translate(0, -maxSpeed * Time.deltaTime, 0);
         }
 

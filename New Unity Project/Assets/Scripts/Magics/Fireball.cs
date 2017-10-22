@@ -6,7 +6,7 @@ public class Fireball : MonoBehaviour {
     public AudioClip som;
     public float velocity = 2;
     public float direction;
-    float damage = 0.25f;
+    float damage = 0.4f;
 
     // Use this for initialization
     void Start(){
