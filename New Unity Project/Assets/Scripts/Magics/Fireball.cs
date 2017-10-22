@@ -6,7 +6,7 @@ public class Fireball : MonoBehaviour {
     public AudioClip som;
     public float velocity = 2;
     public float direction;
-    float damage = 20f;
+    float damage = 0.25f;
 
     // Use this for initialization
     void Start(){
@@ -15,6 +15,7 @@ public class Fireball : MonoBehaviour {
         if (gameObject.transform.position.x > 0){
             direction = -1;
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            //transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else
         {
@@ -36,24 +37,24 @@ public class Fireball : MonoBehaviour {
         this.gameObject.GetComponent<SpriteRenderer>().flipX = !this.gameObject.GetComponent<SpriteRenderer>().flipX;
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
+    //void OnTriggerEnter2D(Collider2D collision) {
+    //
+    //    if (collision.gameObject.tag == "Mirror")
+    //    {
+    //        direction *= -1;
+    //    }
 
-        if (collision.gameObject.tag == "Mirror")
-        {
-            direction *= -1;
-        }
-
-        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2") {
-            collision.gameObject.SendMessage("TakeDamage", damage);
-            Destroy(this.gameObject);
-        }
-    }
+     //   if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2") {
+     //       collision.gameObject.SendMessage("TakeDamage", damage);
+     //       Destroy(this.gameObject);
+     //   }
+    //}
 
     void OnTriggerStay2D(Collider2D collision)
     {
 
         if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
-        {
+       {
             collision.gameObject.SendMessage("TakeDamage", damage);
             Destroy(this.gameObject);
         }

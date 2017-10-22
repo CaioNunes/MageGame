@@ -47,7 +47,7 @@ public class HudMainMenu : MonoBehaviour {
 
        if (FindObjectOfType<PlayerManager>().player1Ready && FindObjectOfType<PlayerManager>().player2Ready)
        {
-            FindObjectOfType<LevelManager>().LoadScene("Game");
+            FindObjectOfType<LevelManager>().LoadScene("Tutorial");
        }
     }
 }

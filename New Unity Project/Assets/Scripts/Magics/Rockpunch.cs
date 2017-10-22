@@ -7,7 +7,7 @@ public class Rockpunch : MonoBehaviour {
     public float velocity = 2;
     public float direction;
 
-    float damage = 12f;
+    float damage = 0.35f;
 
 
     // Use this for initialization
