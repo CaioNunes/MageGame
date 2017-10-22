@@ -6,8 +6,7 @@ public class HudMainMenu : MonoBehaviour {
 
 
     public GameObject player1;
-    public GameObejct player2;
-
+    public GameObject player2;
 
 
 	// Use this for initialization
@@ -17,6 +16,6 @@ public class HudMainMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.)
+		
 	}
 }
