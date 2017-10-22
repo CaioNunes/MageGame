@@ -15,11 +15,17 @@ public class PlayerManager : MonoBehaviour {
         {
             Winner();
         }
+
+        if(player1Ready && player2Ready)
+        {
+            gameObject.GetComponent<LevelManager>().LoadScene("Game");
+        }
     }    
 
     void Winner()
     {
         if (qntPlayer < 2 && qntPlayer > 0){
+
             MovePlayer winnerPlayer = FindObjectOfType<MovePlayer>();
             winnerPlayer.GetComponent<MovePlayer>().enabled = false;
             DontDestroyOnLoad(winnerPlayer.gameObject);
