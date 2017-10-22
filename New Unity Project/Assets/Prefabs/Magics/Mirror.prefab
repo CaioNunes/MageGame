@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb632ab373010942876b85c4462004f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  som: {fileID: 8300000, guid: 444f0e7f7bae4d9429cf2a6ec6cf9afd, type: 3}
+  som: {fileID: 8300000, guid: e960e5aec3de19942acff4c100eed70e, type: 3}
   velocity: 2
   direction: 0
   duration: 0.5

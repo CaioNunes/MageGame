@@ -241,7 +241,7 @@ MonoBehaviour:
   buttonAP2: ChangeElementsP2A
   player1: {fileID: 994339293}
   player2: {fileID: 305385364}
-  p1: {fileID: 8300000, guid: 9841a45e78a45a54e8a2bb17f8931bce, type: 3}
+  p1: {fileID: 8300000, guid: 0ada8cebee7fac64e83a7a58e214bb86, type: 3}
 --- !u!1 &270764628
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +396,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe518da6d51d14f489c641b58af0a00f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
