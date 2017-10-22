@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 825228869}
   - component: {fileID: 825228868}
   - component: {fileID: 825228867}
+  - component: {fileID: 825228870}
   m_Layer: 0
   m_Name: PressAny
   m_TagString: Untagged
@@ -279,6 +280,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -3.8}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &825228870
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825228866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d9aff616f442a842ba2532c057328b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1582317869
 GameObject:
   m_ObjectHideFlags: 0
