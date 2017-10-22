@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: a17ab3d0133add94ba690fcd8974ce0e
-timeCreated: 1508637945
+guid: e35a18ce427d2c64ebed7f8f6aed4361
+timeCreated: 1508647393
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MAGO2_atk1
-    21300002: MAGO2_atk2
-    21300004: MAGO2_atk3
-    21300006: MAGO2_atk4
-    21300008: MAGO2_atk5
-    21300010: MAGO2_iddle1
-    21300012: MAGO2_iddle2
-    21300014: MAGO2_iddle3
-    21300016: MAGO2_up
-    21300018: MAGO2_down
+    21300000: Mago2-atk
+    21300002: Mago2-atk2
+    21300004: Mago2-atk3
+    21300006: Mago2-atk4
+    21300008: Mago2-atk5
+    21300010: Mago2-idle1
+    21300012: Mago2-idle2
+    21300014: Mago2-idle3
+    21300016: Mago2-idle4
+    21300018: Mago2-idle5
+    21300020: Mago2-idle6
+    21300022: Mago2-up1
+    21300024: Mago2-up2
+    21300026: Mago2-up3
+    21300028: Mago2-up4
+    21300030: Mago2-down1
+    21300032: Mago2-down2
+    21300034: Mago2-down3
+    21300036: Mago2-down4
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -63,7 +72,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +80,7 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +89,72 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MAGO2_atk1
+      name: Mago2-atk
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2550
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-atk2
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 2550
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-atk3
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2550
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-atk4
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 2550
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-atk5
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2550
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-idle1
       rect:
         serializedVersion: 2
         x: 0
@@ -88,12 +162,12 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_atk2
+      name: Mago2-idle2
       rect:
         serializedVersion: 2
         x: 850
@@ -101,12 +175,12 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_atk3
+      name: Mago2-idle3
       rect:
         serializedVersion: 2
         x: 1700
@@ -114,25 +188,38 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_atk4
+      name: Mago2-idle4
       rect:
         serializedVersion: 2
-        x: 2550
+        x: 2546
         y: 1700
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_atk5
+      name: Mago2-idle5
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1700
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-idle6
       rect:
         serializedVersion: 2
         x: 0
@@ -140,12 +227,12 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_iddle1
+      name: Mago2-up1
       rect:
         serializedVersion: 2
         x: 850
@@ -153,25 +240,25 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_iddle2
+      name: Mago2-up2
       rect:
         serializedVersion: 2
         x: 1700
-        y: 853
+        y: 850
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_iddle3
+      name: Mago2-up3
       rect:
         serializedVersion: 2
         x: 2550
@@ -179,12 +266,25 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_up
+      name: Mago2-up4
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-down1
       rect:
         serializedVersion: 2
         x: 0
@@ -192,12 +292,12 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MAGO2_down
+      name: Mago2-down2
       rect:
         serializedVersion: 2
         x: 850
@@ -205,7 +305,33 @@ TextureImporter:
         width: 850
         height: 850
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-down3
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mago2-down4
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
