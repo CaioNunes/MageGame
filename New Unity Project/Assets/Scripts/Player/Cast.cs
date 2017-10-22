@@ -67,12 +67,12 @@ public class Cast : MonoBehaviour {
 
         if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().changeElementB))
         {
-            Debug.Log(this.gameObject.name);
+            //Debug.Log(this.gameObject.name);
             ChangeElementB();
         }
 
         if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().changeElementA)){
-            Debug.Log(this.gameObject.name);
+            //Debug.Log(this.gameObject.name);
             ChangeElementA();
         }
     }
