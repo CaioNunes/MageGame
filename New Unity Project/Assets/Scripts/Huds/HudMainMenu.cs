@@ -18,21 +18,21 @@ public class HudMainMenu : MonoBehaviour {
         animControllerP1 = player1.GetComponent<Animator>();
         animControllerP2 = player2.GetComponent<Animator>();
 
-        animControllerP1.Play("Idlle");
-        animControllerP2.Play("Idlle");
+        animControllerP1.Play("idle");
+        animControllerP2.Play("idle");
     }
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown(buttonAP1))//seleção player1
         {
-            animControllerP1.Play("Attack");
+            animControllerP1.Play("attack");
             FindObjectOfType<PlayerManager>().player1Ready = true;
         }
 
         if (Input.GetButtonDown(buttonAP2))//seleção player2
         {
-            animControllerP2.Play("Attack");
+            animControllerP2.Play("ttack");
             FindObjectOfType<PlayerManager>().player2Ready = true;
         }
     }
