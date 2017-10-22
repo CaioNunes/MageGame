@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+    public string cep1a = "ChangeElementsP1A";
+    public string cep1b = "ChangeElementsP1B";
+
+    public string cep2a = "ChangeElementsP2A";
+    public string cep2b = "ChangeElementsP2B";
+
     bool sceneWinner = false;
 
 	// Use this for initialization
@@ -17,7 +23,19 @@ public class LevelManager : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             OnMainMenu();
-        }        
+        }
+
+        if (Input.GetButtonDown("Escape")) {
+            Debug.Log("ESC APERTADO");
+            if (SceneManager.GetActiveScene().name != "MainMenu") {
+                LoadScene("MainMenu");
+            }
+
+            if(SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                Application.Quit();
+            }
+        }
         
     }
 
@@ -28,12 +46,12 @@ public class LevelManager : MonoBehaviour {
 
     void OnMainMenu()
     {
-        if (Input.GetKeyDown("k") || Input.GetKeyDown("l"))
-        {
+       if (Input.GetKeyDown("k") || Input.GetKeyDown("l") || Input.GetButtonDown(cep1a) || Input.GetButtonDown(cep1b))
+       {
             gameObject.GetComponent<PlayerManager>().player1Ready = true;
-        }
+       }
 
-        if (Input.GetKeyDown("f") || Input.GetKeyDown("g"))
+        if (Input.GetKeyDown("f") || Input.GetKeyDown("g") || Input.GetButtonDown(cep2a) || Input.GetButtonDown(cep2b))
         {
             gameObject.GetComponent<PlayerManager>().player2Ready = true;
         }

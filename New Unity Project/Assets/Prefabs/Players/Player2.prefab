@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   minHeight: -3.05
-  maxHeight: 3.05
+  maxHeight: 1.7
 --- !u!114 &114652714818430658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position_elements_A: 0
   position_elements_B: 0
-  cooldown: 1.5
+  cooldown: 1
 --- !u!212 &212005287482897798
 SpriteRenderer:
   m_ObjectHideFlags: 1

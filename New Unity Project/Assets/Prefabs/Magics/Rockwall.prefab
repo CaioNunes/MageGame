@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2884789a54c53a4bab381149ca292de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 2
+  velocity: 4
   direction: 0
-  duration: 4
+  duration: 2
   positionInstante: 9
 --- !u!212 &212037242081925856
 SpriteRenderer:

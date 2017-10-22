@@ -31,28 +31,39 @@ public class Cast : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        playerPosition = gameObject.transform;
+        playerPosition = this.gameObject.transform;
 
         if (cont <= cooldown) {
             cont += Time.deltaTime;
         }
 
-        if (Input.GetButtonDown(gameObject.GetComponent<Controls>().clearMagic))
-        {
-            ClearMagic();
-        }
+        //if (Input.GetButtonDown(gameObject.GetComponent<Controls>().clearMagic))
+        //{
+       //     ClearMagic();
+        //}
 
-        if (Input.GetButtonDown(gameObject.GetComponent<Controls>().cast))
+        float move = Input.GetAxisRaw(this.gameObject.GetComponent<Controls>().cast);
+        if (move > 0 && this.gameObject.transform.position.x < 0)
         {
             MagicCast();
         }
 
-        if (Input.GetButtonDown(gameObject.GetComponent<Controls>().changeElementB))
+        if (move < 0 && this.gameObject.transform.position.x > 0)
+        {
+            MagicCast();
+        }
+
+        //   if (Input.GetButtonDown(gameObject.GetComponent<Controls>().cast))
+        //  // {
+        //       MagicCast();
+        //   }
+
+        if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().changeElementB))
         {
             ChangeElementB();
         }
 
-        if (Input.GetButtonDown(gameObject.GetComponent<Controls>().changeElementA)){
+        if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().changeElementA)){
             ChangeElementA();
         }
     }
