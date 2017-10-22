@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 21125137}
   - component: {fileID: 21125136}
   - component: {fileID: 21125140}
+  - component: {fileID: 21125141}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -225,6 +226,21 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
+--- !u!114 &21125141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21125135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c67a2dc8b62f74887a8048bfff40da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonAP1: 
+  buttonAP2: 
+  player1: {fileID: 994339293}
+  player2: {fileID: 305385364}
 --- !u!1 &270764628
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +287,7 @@ GameObject:
   - component: {fileID: 305385367}
   - component: {fileID: 305385366}
   m_Layer: 5
-  m_Name: Mago
+  m_Name: MagoP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,7 +515,7 @@ GameObject:
   - component: {fileID: 994339296}
   - component: {fileID: 994339295}
   m_Layer: 5
-  m_Name: Mago
+  m_Name: MagoP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,6 +708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbacc38cb8db5d49a6175c53045cdce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cep1a: ChangeElementsP1A
+  cep1b: ChangeElementsP1B
+  cep2a: ChangeElementsP2A
+  cep2b: ChangeElementsP2B
 --- !u!4 &1305190958
 Transform:
   m_ObjectHideFlags: 0
