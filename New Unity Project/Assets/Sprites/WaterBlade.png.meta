@@ -1,14 +1,9 @@
 fileFormatVersion: 2
 guid: 975dc6dc51adedd4488053f9d86b0ff8
-timeCreated: 1508669658
+timeCreated: 1508664494
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: WaterBlade_0
-    21300002: WaterBlade_1
-    21300004: WaterBlade_2
-    21300006: WaterBlade_3
-    21300008: WaterBlade_4
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,7 +34,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -58,95 +53,14 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: WaterBlade_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1417
-        width: 1984
-        height: 1417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WaterBlade_1
-      rect:
-        serializedVersion: 2
-        x: 1984
-        y: 1417
-        width: 1984
-        height: 1417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WaterBlade_2
-      rect:
-        serializedVersion: 2
-        x: 3968
-        y: 1417
-        width: 1984
-        height: 1417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WaterBlade_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1984
-        height: 1417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: WaterBlade_4
-      rect:
-        serializedVersion: 2
-        x: 1984
-        y: 0
-        width: 1984
-        height: 1417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
