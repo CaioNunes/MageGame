@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
+        Screen.SetResolution(1920, 1080, true);
         Screen.fullScreen = true;
         DontDestroyOnLoad(this);
 
