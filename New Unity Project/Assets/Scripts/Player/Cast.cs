@@ -36,12 +36,7 @@ public class Cast : MonoBehaviour {
 
         if (cont <= cooldown) {
             cont += Time.deltaTime;
-        }
-
-        //if (Input.GetButtonDown(gameObject.GetComponent<Controls>().clearMagic))
-        //{
-       //     ClearMagic();
-        //}
+        }        
 
         float move = Input.GetAxisRaw(this.gameObject.GetComponent<Controls>().cast);
         if (move > 0 && this.gameObject.transform.position.x < 0)
@@ -52,12 +47,7 @@ public class Cast : MonoBehaviour {
         if (move < 0 && this.gameObject.transform.position.x > 0)
         {
             MagicCast();
-        }
-
-        //   if (Input.GetButtonDown(gameObject.GetComponent<Controls>().cast))
-        //  // {
-        //       MagicCast();
-        //   }
+        }        
 
         if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().changeElementB))
         {
@@ -74,8 +64,7 @@ public class Cast : MonoBehaviour {
     void MagicCast() {            
             for (int i = 0; i < 2; i++) {
                 if (magicPanel[i] == "E" ) {
-                    canCast = false;
-                    Debug.Log("Sem Magia");
+                    canCast = false;                    
                 }
             }
 
@@ -98,8 +87,7 @@ public class Cast : MonoBehaviour {
                         Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x + 2.67f, playerPosition.position.y), Quaternion.identity);
 
                 lastMagic = magic;
-                cont = 0;
-                Debug.Log(magic);
+                cont = 0;                
                 }
                 ClearMagic();
             }        

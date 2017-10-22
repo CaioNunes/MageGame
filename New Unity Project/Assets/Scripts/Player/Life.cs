@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Life : MonoBehaviour {
 
-    public float hp = 100;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public float hp = 100;	
 	
 	// Update is called once per frame
 	void Update () {
