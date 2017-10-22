@@ -23,10 +23,13 @@ public class Cast : MonoBehaviour {
 
     string lastMagic;
 
+    Animator anim;
+
 	// Use this for initialization
 	void Start () {
         magicPanel = new string[2] { "A", "A"};
         magicElements = new string[3] { "A","F","T" };
+        anim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -80,7 +83,8 @@ public class Cast : MonoBehaviour {
                     //audio de falha
                     lastMagic = "";
                 }
-                else {           
+                else {
+                anim.Play("attack");
                     if(playerPosition.position.x > 0)
                         Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x - 2.67f, playerPosition.position.y), Quaternion.identity);
                     else

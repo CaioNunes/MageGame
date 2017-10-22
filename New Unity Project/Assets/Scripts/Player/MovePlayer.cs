@@ -12,8 +12,10 @@ public class MovePlayer : MonoBehaviour {
     private bool canMoveUp;
     private bool canMoveDown;
 
-    void Start(){
+    Animator anim;
 
+    void Start(){
+        anim = GetComponent<Animator>();
     }
 
     void Update(){
@@ -27,6 +29,7 @@ public class MovePlayer : MonoBehaviour {
         canMove();
 
         if (move > 0 && canMoveUp){
+            anim.Play("moveUp");
             transform.Translate(0, maxSpeed * Time.deltaTime, 0);
         }
 
