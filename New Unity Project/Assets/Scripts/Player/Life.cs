@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Life : MonoBehaviour {
 
-    public float hp = 100;	
+    public float hp = 1;	
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,4 +24,8 @@ public class Life : MonoBehaviour {
         }
         //Manda mensagem pro objeto que gerencia a vitória
     }
+    
 }
+
+
+

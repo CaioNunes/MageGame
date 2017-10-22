@@ -19,13 +19,16 @@ public class PlayerManager : MonoBehaviour {
 
     void Winner()
     {
-        if (qntPlayer < 2 && qntPlayer > 0){
+        if (qntPlayer == 1){
 
             MovePlayer winnerPlayer = FindObjectOfType<MovePlayer>();
-            winnerPlayer.GetComponent<MovePlayer>().enabled = false;
-            DontDestroyOnLoad(winnerPlayer.gameObject);
+            Debug.Log(winnerPlayer.name);
             gameObject.GetComponent<LevelManager>().LoadScene("Winner" + winnerPlayer.gameObject.name);
-        }            
+        }else
+            if(qntPlayer == 0)
+            {
+                gameObject.GetComponent<LevelManager>().LoadScene("Draw");
+            }
     }  
 
 

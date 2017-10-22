@@ -16,10 +16,10 @@ EditorBuildSettings:
     guid: 73e459839fedcf64aae01114df7cac8f
   - enabled: 1
     path: Assets/Scenes/WinnerPlayer2.unity
-    guid: 5ce3a8514d8d7a84a8e57e4778ac14f8
-  - enabled: 1
-    path: Assets/Scenes/Draw.unity
-    guid: a45ef3df17830af4e8b98eaedbf9fd24
+    guid: 2e553e34794c36f4c8ac603898c1088d
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
+    guid: 7228c85f2ee402a4babe2fdd97d62548
+  - enabled: 1
+    path: Assets/Scenes/Draw.unity
     guid: 00000000000000000000000000000000

@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HudWinner : MonoBehaviour {
-
+        
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public void Retry()
+    {
+        FindObjectOfType<PlayerManager>().qntPlayer = 2;
+        foreach(Life hp in FindObjectsOfType<Life>())
+        {
+            hp.hp = 1;
+        }
+
+        LevelManager scene = FindObjectOfType<LevelManager>();
+        scene.LoadScene("Game");
+    }
+
+    
 }
