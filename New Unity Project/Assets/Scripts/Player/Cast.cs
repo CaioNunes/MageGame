@@ -76,24 +76,26 @@ public class Cast : MonoBehaviour {
             }
 
             if (canCast) {                
+                cont = 0;
                 Array.Sort(magicPanel);                
                 magic = magicPanel[0] + magicPanel[1];
+                anim.Play("attack");
+
                 if (magic == lastMagic)
                 {
                     //audio de falha
                     lastMagic = "";
                 }
                 else {
-                anim.Play("attack");
                     if(playerPosition.position.x > 0)
                         Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x - 2.67f, playerPosition.position.y), Quaternion.identity);
                     else
                         Instantiate(FindObjectOfType<MagicManager>().magics[magic] as GameObject, new Vector2(playerPosition.position.x + 2.67f, playerPosition.position.y), Quaternion.identity);
 
                 lastMagic = magic;
-                cont = 0;                
-                }
-                ClearMagic();
+
+            }
+            ClearMagic();
             }        
         canCast = true;
     }

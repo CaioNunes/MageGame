@@ -32,7 +32,7 @@ public class HudMainMenu : MonoBehaviour {
 
         if (Input.GetButtonDown(buttonAP2))//seleção player2
         {
-            animControllerP2.Play("ttack");
+            animControllerP2.Play("attack");
             FindObjectOfType<PlayerManager>().player2Ready = true;
         }
     }

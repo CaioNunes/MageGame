@@ -30,11 +30,7 @@ public class PlayerManager : MonoBehaviour {
             winnerPlayer.GetComponent<MovePlayer>().enabled = false;
             DontDestroyOnLoad(winnerPlayer.gameObject);
             gameObject.GetComponent<LevelManager>().LoadScene("Winner" + winnerPlayer.gameObject.name);
-        }
-        else
-            if (qntPlayer == 0){
-            gameObject.GetComponent<LevelManager>().LoadScene("Draw");
-        }
+        }            
     }
 
     
