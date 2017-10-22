@@ -39,8 +39,9 @@ public class Cast : MonoBehaviour {
 
         if (cont <= cooldown) {
             cont += Time.deltaTime;
-        }        
+        }
 
+        //================================== CAST JOYSTICK ==================================
         float move = Input.GetAxisRaw(this.gameObject.GetComponent<Controls>().cast);
         if (move > 0 && this.gameObject.transform.position.x < 0)
         {
@@ -50,7 +51,19 @@ public class Cast : MonoBehaviour {
         if (move < 0 && this.gameObject.transform.position.x > 0)
         {
             MagicCast();
-        }        
+        }
+        //=====================================================================================
+
+
+
+
+        //================================== CAST =============================================
+        if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().cast))
+        {
+            MagicCast();
+        }
+        //=====================================================================================
+
 
         if (Input.GetButtonDown(this.gameObject.GetComponent<Controls>().changeElementB))
         {
