@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670520510543848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.33, y: 0, z: 0}
+  m_LocalPosition: {x: -5.33, y: 0, z: -1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7787233cb99529d47a82ea6715d61328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 100
 --- !u!114 &114456085557564968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   minHeight: -3.05
-  maxHeight: 3.05
+  maxHeight: 1.7
 --- !u!114 &114721486963838352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,9 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc60ea5d41c5a54681f971acf88c4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position_elements_A: -1
-  position_elements_B: -1
-  cooldown: 1.5
+  position_elements_A: 0
+  position_elements_B: 0
+  cooldown: 1
 --- !u!212 &212005287482897798
 SpriteRenderer:
   m_ObjectHideFlags: 1

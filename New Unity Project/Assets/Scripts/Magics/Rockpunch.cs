@@ -41,7 +41,7 @@ public class Rockpunch : MonoBehaviour {
 
         if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
         {
-            collision.gameObject.SendMessage("takeDamage", damage);
+            collision.gameObject.SendMessage("TakeDamage", damage);
             Destroy(this.gameObject);
         }
     }
@@ -51,7 +51,7 @@ public class Rockpunch : MonoBehaviour {
 
         if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
         {
-            collision.gameObject.SendMessage("takeDamage", damage);
+            collision.gameObject.SendMessage("TakeDamage", damage);
             Destroy(this.gameObject);
         }
 

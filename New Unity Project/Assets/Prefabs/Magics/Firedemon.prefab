@@ -73,7 +73,7 @@ MonoBehaviour:
   velocity: 2
   direction: 0
   duration: 2
-  fireRate: 0.2
+  fireRate: 0.5
   firebalinhas: {fileID: 1904481070807336, guid: ac797f42a0ffe154ebd6481794974055,
     type: 2}
   positionInstante: 3
