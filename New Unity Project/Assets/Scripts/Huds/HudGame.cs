@@ -9,8 +9,8 @@ public class HudGame : MonoBehaviour {
     public Sprite[] elements;
     public GameObject[] elementSlotsP1;
     public GameObject[] elementSlotsP2;
-    public Slider lifeP1;
-    public Slider lifeP2;
+    public Image lifeP1;
+    public Image lifeP2;
 
     int numberP1A;
     int numberP1B;
@@ -82,8 +82,10 @@ public class HudGame : MonoBehaviour {
                 elementSlotsP2[1].GetComponentInChildren<SpriteRenderer>().enabled = false;
             }
 
-            lifeP1.value = player1.GetComponent<Life>().hp;
-            lifeP2.value = player2.GetComponent<Life>().hp;
+
+            float atualValue = lifeP1.transform.position.x;
+            lifeP1.fillAmount = player1.GetComponent<Life>().hp / 100f;
+            lifeP2.fillAmount = player2.GetComponent<Life>().hp / 100f;
 
         }
 
