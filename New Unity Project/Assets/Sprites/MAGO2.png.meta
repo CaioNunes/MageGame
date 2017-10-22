@@ -1,15 +1,19 @@
 fileFormatVersion: 2
-guid: 8c0ed26e0ff176e41b312c9011b1b33e
-timeCreated: 1508636861
+guid: a17ab3d0133add94ba690fcd8974ce0e
+timeCreated: 1508637945
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mago_1_terra
-    21300002: mago_1_agua
-    21300004: mago_1_fogo
-    21300006: 22766701_10210251610193683_435176667_o_0
-    21300008: 22766701_10210251610193683_435176667_o_1
-    21300010: 22766701_10210251610193683_435176667_o_2
+    21300000: MAGO2_atk1
+    21300002: MAGO2_atk2
+    21300004: MAGO2_atk3
+    21300006: MAGO2_atk4
+    21300008: MAGO2_atk5
+    21300010: MAGO2_iddle1
+    21300012: MAGO2_iddle2
+    21300014: MAGO2_iddle3
+    21300016: MAGO2_up
+    21300018: MAGO2_down
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -33,7 +37,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 1
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -59,7 +63,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -67,7 +71,7 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,78 +80,130 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mago_1_terra
+      name: MAGO2_atk1
       rect:
         serializedVersion: 2
         x: 0
-        y: 425
-        width: 425
-        height: 425
+        y: 1700
+        width: 850
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: mago_1_agua
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 425
-        width: 425
-        height: 425
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: mago_1_fogo
+      name: MAGO2_atk2
       rect:
         serializedVersion: 2
         x: 850
-        y: 425
-        width: 425
-        height: 425
+        y: 1700
+        width: 850
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 22766701_10210251610193683_435176667_o_0
+      name: MAGO2_atk3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 190
-        width: 110
-        height: 126
+        x: 1700
+        y: 1700
+        width: 850
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 22766701_10210251610193683_435176667_o_1
+      name: MAGO2_atk4
       rect:
         serializedVersion: 2
-        x: 654
-        y: 171
-        width: 110
-        height: 126
+        x: 2550
+        y: 1700
+        width: 850
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: 22766701_10210251610193683_435176667_o_2
+      name: MAGO2_atk5
       rect:
         serializedVersion: 2
-        x: 1010
-        y: 154
-        width: 110
-        height: 126
+        x: 0
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAGO2_iddle1
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAGO2_iddle2
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 853
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAGO2_iddle3
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAGO2_up
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAGO2_down
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 850
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
