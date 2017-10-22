@@ -10,6 +10,10 @@ public class HudMainMenu : MonoBehaviour {
     public GameObject player1;
     public GameObject player2;
 
+   // public GameObject btnStart;
+   // Animation animB1;
+  //  Animation animB2;
+
     Animator animControllerP1;
     Animator animControllerP2;
 
