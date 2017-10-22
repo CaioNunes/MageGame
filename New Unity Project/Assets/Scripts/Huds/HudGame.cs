@@ -84,8 +84,8 @@ public class HudGame : MonoBehaviour {
 
 
             float atualValue = lifeP1.transform.position.x;
-            lifeP1.fillAmount = player1.GetComponent<Life>().hp / 100f;
-            lifeP2.fillAmount = player2.GetComponent<Life>().hp / 100f;
+            lifeP1.fillAmount = player1.GetComponent<Life>().hp ;
+            lifeP2.fillAmount = player2.GetComponent<Life>().hp ;
 
         }
 
