@@ -12,7 +12,10 @@ public class Firebalinhas : MonoBehaviour {
         if (gameObject.transform.position.x > 0)
         {
             direction = -1;
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+            //gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
