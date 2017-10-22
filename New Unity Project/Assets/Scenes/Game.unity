@@ -109,11 +109,8 @@ NavMeshSettings:
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1 &16183407
 =======
-=======
->>>>>>> d42ddaf07f99d2e346e311028c3541ba0ad80a3a
 --- !u!1 &69413995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,9 +1792,6 @@ CanvasRenderer:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
-<<<<<<< HEAD
->>>>>>> d42ddaf07f99d2e346e311028c3541ba0ad80a3a
-=======
 >>>>>>> d42ddaf07f99d2e346e311028c3541ba0ad80a3a
 --- !u!1001 &1876578523
 Prefab:
