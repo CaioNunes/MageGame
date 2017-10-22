@@ -37,27 +37,27 @@ public class Fireball : MonoBehaviour {
         this.gameObject.GetComponent<SpriteRenderer>().flipX = !this.gameObject.GetComponent<SpriteRenderer>().flipX;
     }
 
-    //void OnTriggerEnter2D(Collider2D collision) {
-    //
-    //    if (collision.gameObject.tag == "Mirror")
-    //    {
-    //        direction *= -1;
-    //    }
-
-     //   if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2") {
-     //       collision.gameObject.SendMessage("TakeDamage", damage);
-     //       Destroy(this.gameObject);
-     //   }
-    //}
-
-    void OnTriggerStay2D(Collider2D collision)
-    {
-
-        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
-       {
-            collision.gameObject.SendMessage("TakeDamage", damage);
-            Destroy(this.gameObject);
+    void OnTriggerEnter2D(Collider2D collision) {
+    
+        if (collision.gameObject.tag == "Mirror")
+        {
+            direction *= -1;
         }
 
+       if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2") {
+           collision.gameObject.SendMessage("TakeDamage", damage);
+            Destroy(this.gameObject);
+        }
     }
+
+   // void OnTriggerStay2D(Collider2D collision)
+   // {
+
+    //    if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
+    //   {
+    //        collision.gameObject.SendMessage("TakeDamage", damage);
+   //         Destroy(this.gameObject);
+     //   }
+
+    //}
 }
