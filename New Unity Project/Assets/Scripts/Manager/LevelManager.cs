@@ -18,9 +18,9 @@ public class LevelManager : MonoBehaviour {
         {
             OnMainMenu();
         }        
-        
     }
 
+        
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);

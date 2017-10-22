@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class HudManager : MonoBehaviour {
+public class HudGame : MonoBehaviour {
 
     public Sprite[] elements;
     public GameObject[] elementSlotsP1;
