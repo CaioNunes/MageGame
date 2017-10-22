@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Firedemon : MonoBehaviour {
 
+    public AudioClip som;
+
     public float velocity = 2;
     public float direction;
     public float duration;
@@ -20,6 +22,8 @@ public class Firedemon : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        AudioSource.PlayClipAtPoint(som, transform.position);
+
         if (gameObject.transform.position.x > 0)
         {
             transform.Translate(transform.position.x - positionInstante, 0, 0);
