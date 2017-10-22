@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 guid: 41e05622f3e099d4a85c155d31e958ff
-timeCreated: 1508664488
+timeCreated: 1508668798
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: RockPunch_0
+    21300002: RockPunch_1
+    21300004: RockPunch_2
+    21300006: RockPunch_3
+    21300008: RockPunch_4
+    21300010: RockPunch_5
+    21300012: RockPunch_6
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -76,7 +83,98 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RockPunch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RockPunch_1
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1700
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RockPunch_2
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1700
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RockPunch_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RockPunch_4
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RockPunch_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 850
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RockPunch_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 850
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
