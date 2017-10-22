@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   som: {fileID: 8300000, guid: 0059c45eaf4174243bea0969dcac723d, type: 3}
-  velocity: 4
+  velocity: 5
   direction: 0
 --- !u!212 &212037242081925856
 SpriteRenderer:
