@@ -16,6 +16,7 @@ public class HudMainMenu : MonoBehaviour {
 
     Animator animControllerP1;
     Animator animControllerP2;
+    public AudioClip p1;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +31,7 @@ public class HudMainMenu : MonoBehaviour {
 	void Update () {
 		if (Input.GetButtonDown(buttonAP1))//seleção player1
         {
+            AudioSource.PlayClipAtPoint(p1, transform.position);
             animControllerP1.Play("attack");
             FindObjectOfType<PlayerManager>().player1Ready = true;
             FindObjectOfType<PlayerManager>().qntPlayer ++;
@@ -37,6 +39,7 @@ public class HudMainMenu : MonoBehaviour {
 
         if (Input.GetButtonDown(buttonAP2))//seleção player2
         {
+            AudioSource.PlayClipAtPoint(p1, transform.position);
             animControllerP2.Play("attack");
             FindObjectOfType<PlayerManager>().player2Ready = true;
             FindObjectOfType<PlayerManager>().qntPlayer++;

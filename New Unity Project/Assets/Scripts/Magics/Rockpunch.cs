@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Rockpunch : MonoBehaviour {
-
+    public AudioClip som;
     public float velocity = 2;
     public float direction;
 
@@ -13,6 +13,8 @@ public class Rockpunch : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        AudioSource.PlayClipAtPoint(som, transform.position);
+
         if (gameObject.transform.position.x > 0)
         {
             direction = -1;

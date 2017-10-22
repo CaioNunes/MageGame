@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Rockwall : MonoBehaviour {
+    public AudioClip som;
 
     public float velocity = 2;
     public float direction;
@@ -16,6 +17,8 @@ public class Rockwall : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        AudioSource.PlayClipAtPoint(som, transform.position);
+
         if (gameObject.transform.position.x > 0)
         {
             transform.Translate(transform.position.x - positionInstante, 0, 0);

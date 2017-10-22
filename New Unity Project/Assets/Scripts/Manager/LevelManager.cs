@@ -13,10 +13,12 @@ public class LevelManager : MonoBehaviour
     public string cep2b = "ChangeElementsP2B";
 
     bool sceneWinner = false;
+   // List<LevelManager> list = new List<LevelManager>();
 
     // Use this for initialization
     void Start()
     {
+       
         DontDestroyOnLoad(this);
 
 	}
@@ -24,6 +26,14 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetButtonDown("Escape")){
+            this.gameObject.GetComponent<PlayerManager>().player1Ready = false;
+            this.gameObject.GetComponent<PlayerManager>().player2Ready = false;
+
+            SceneManager.LoadScene("MainMenu");
+            Destroy(this);
+        }
 
     }
 

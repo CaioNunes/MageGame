@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mirror : MonoBehaviour {
 
+    public AudioClip som;
     public float velocity = 2;
     public float direction;
     public float duration;
@@ -14,6 +15,7 @@ public class Mirror : MonoBehaviour {
     // Use this for initialization
     void Start(){
 
+        AudioSource.PlayClipAtPoint(som, transform.position);
 
         if (gameObject.transform.position.x > 0){
             

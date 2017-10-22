@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Waterblade : MonoBehaviour {
+    public AudioClip som;
 
     public float velocity;
     public float direction;
@@ -11,6 +12,8 @@ public class Waterblade : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        AudioSource.PlayClipAtPoint(som, transform.position);
+
         if (gameObject.transform.position.x > 0)
         {
             direction = -1;
