@@ -18,7 +18,8 @@ public class LevelManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       
+        Cursor.visible = false;
+        Screen.fullScreen = true;
         DontDestroyOnLoad(this);
 
 	}
@@ -28,8 +29,14 @@ public class LevelManager : MonoBehaviour
     {
 
         if(Input.GetButtonDown("Escape")){
-            this.gameObject.GetComponent<PlayerManager>().player1Ready = false;
-            this.gameObject.GetComponent<PlayerManager>().player2Ready = false;
+            if (SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                Application.Quit();
+            }
+            else {
+                this.gameObject.GetComponent<PlayerManager>().player1Ready = false;
+                this.gameObject.GetComponent<PlayerManager>().player2Ready = false;
+            }
 
             SceneManager.LoadScene("MainMenu");
             Destroy(this);
