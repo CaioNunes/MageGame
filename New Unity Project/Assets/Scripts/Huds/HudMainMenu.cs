@@ -28,12 +28,14 @@ public class HudMainMenu : MonoBehaviour {
         {
             animControllerP1.Play("attack");
             FindObjectOfType<PlayerManager>().player1Ready = true;
+            FindObjectOfType<PlayerManager>().qntPlayer ++;
         }
 
         if (Input.GetButtonDown(buttonAP2))//seleção player2
         {
             animControllerP2.Play("attack");
             FindObjectOfType<PlayerManager>().player2Ready = true;
+            FindObjectOfType<PlayerManager>().qntPlayer++;
         }
 
        // if (FindObjectOfType<PlayerManager>().player1Ready && FindObjectOfType<PlayerManager>().player2Ready)

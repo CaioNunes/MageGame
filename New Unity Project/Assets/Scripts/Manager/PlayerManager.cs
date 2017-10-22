@@ -14,12 +14,7 @@ public class PlayerManager : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "Game")
         {
             Winner();
-        }
-
-        if(player1Ready && player2Ready)
-        {
-            gameObject.GetComponent<LevelManager>().LoadScene("Game");
-        }
+        }        
     }    
 
     void Winner()
