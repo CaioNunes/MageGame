@@ -18,14 +18,14 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-    }
+
+	}
 
     // Update is called once per frame
     void Update()
     {
 
     }
-
 
     public void LoadScene(string scene)
     {
