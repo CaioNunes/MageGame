@@ -31,9 +31,7 @@ public class PlayerManager : MonoBehaviour {
             DontDestroyOnLoad(winnerPlayer.gameObject);
             gameObject.GetComponent<LevelManager>().LoadScene("Winner" + winnerPlayer.gameObject.name);
         }            
-    }
-
-    
+    }  
 
 
 }

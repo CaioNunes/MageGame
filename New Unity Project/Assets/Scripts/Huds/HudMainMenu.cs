@@ -35,5 +35,10 @@ public class HudMainMenu : MonoBehaviour {
             animControllerP2.Play("attack");
             FindObjectOfType<PlayerManager>().player2Ready = true;
         }
+
+        if (FindObjectOfType<PlayerManager>().player1Ready && FindObjectOfType<PlayerManager>().player2Ready)
+        {
+            FindObjectOfType<LevelManager>().LoadScene("Game");
+        }
     }
 }
