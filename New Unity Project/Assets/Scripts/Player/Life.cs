@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Life : MonoBehaviour {
 
-    public float hp = 1;
-    
+    public float hp;
+    public float maxHP = 1;
+
+    private void Awake()
+    {
+        hp = maxHP;
+    }
 
     // Update is called once per frame
     void Update () {
@@ -24,8 +29,7 @@ public class Life : MonoBehaviour {
         {
             FindObjectOfType<PlayerManager>().qntPlayer--;
             DestroyImmediate(gameObject);
-        }
-        //Manda mensagem pro objeto que gerencia a vitória
+        }       
     }
     
 

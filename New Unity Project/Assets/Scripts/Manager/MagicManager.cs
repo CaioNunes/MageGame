@@ -23,10 +23,6 @@ public class MagicManager : MonoBehaviour {
         magics.Add("FT", rockwall);
         magics.Add("AT", mirrorforce);
               
-    }
+    }	
 	
-	// Update is called once per frame
-	void Update () {
-        
-    } 
 }

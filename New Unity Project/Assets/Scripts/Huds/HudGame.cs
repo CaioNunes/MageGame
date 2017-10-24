@@ -20,15 +20,20 @@ public class HudGame : MonoBehaviour {
     GameObject player1;
     GameObject player2;
     // Use this for initialization
-    void Start () {
+    private void Awake()
+    {
         player1 = GameObject.FindGameObjectWithTag("Player1");
         player2 = GameObject.FindGameObjectWithTag("Player2");
 
-        
+        player1.GetComponent<Life>().hp = player1.GetComponent<Life>().maxHP;
+        player2.GetComponent<Life>().hp = player2.GetComponent<Life>().maxHP;
+
+        FindObjectOfType<PlayerManager>().qntPlayer = 2;
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 
         if (FindObjectOfType<PlayerManager>().qntPlayer > 1)
         {
@@ -81,9 +86,7 @@ public class HudGame : MonoBehaviour {
             {
                 elementSlotsP2[1].GetComponentInChildren<SpriteRenderer>().enabled = false;
             }
-
-
-            float atualValue = lifeP1.transform.position.x;
+            
             lifeP1.fillAmount = player1.GetComponent<Life>().hp;
             lifeP2.fillAmount = player2.GetComponent<Life>().hp;
 

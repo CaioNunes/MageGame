@@ -9,6 +9,7 @@ TagManager:
   - Magic
   - Mirror
   - PlayerWinner
+  - GameManager
   layers:
   - Default
   - TransparentFX
