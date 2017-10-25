@@ -38,6 +38,9 @@ public class Rockpunch : MonoBehaviour {
 
         if (collision.gameObject.tag == "Mirror")
         {
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
             direction *= -1;
         }
 

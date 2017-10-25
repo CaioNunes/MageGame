@@ -37,7 +37,10 @@ public class Firebalinhas : MonoBehaviour {
     void mirror()
     {
         direction *= -1;
-        this.gameObject.GetComponent<SpriteRenderer>().flipX = !this.gameObject.GetComponent<SpriteRenderer>().flipX;
+        //this.gameObject.GetComponent<SpriteRenderer>().flipX = !this.gameObject.GetComponent<SpriteRenderer>().flipX;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -45,6 +48,9 @@ public class Firebalinhas : MonoBehaviour {
 
         if (collision.gameObject.tag == "Mirror")
         {
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
             direction *= -1;
         }
 
